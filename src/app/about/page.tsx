@@ -29,15 +29,15 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold font-headline mb-4 text-primary flex items-center gap-3"><Building className="w-8 h-8"/> Our History</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Founded in 2010, Rabbaniyah Educare began as a small community initiative with a simple yet powerful goal: to provide free, high-quality education to underprivileged children in the Ampang area. What started in a rented single-room space with a handful of students has grown into a multi-faceted organization serving hundreds of children and their families.
+                  Established in 2008, the Rabbaniyah Rohingya School for Refugees (Malaysia) wants to spread our message of hope and compassion. We focus on providing a future by giving children access to education. 
                 </p>
                 <p>
-                  Over the years, we've expanded our programs beyond basic schooling to include vocational training, digital literacy, and health and wellness initiatives. Our growth is a testament to the unwavering support of our community, volunteers, and donors who share our vision of a world where every child has the chance to succeed.
+                  Our school is located in Ampang-Malaysia, and we focus on providing education to children of the Rohingya refugee community in Kuala Lumpur, Malaysia.
                 </p>
               </div>
             </div>
             <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
-                <Image src="https://placehold.co/600x450.png" data-ai-hint="original building" alt="The first Rabbaniyah Educare center" layout="fill" objectFit="cover" />
+                <Image src="https://placehold.co/600x450.png" data-ai-hint="refugee children school" alt="The first Rabbaniyah Educare center" layout="fill" objectFit="cover" />
             </div>
           </div>
         </div>
