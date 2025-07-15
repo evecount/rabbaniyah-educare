@@ -14,13 +14,17 @@ export default function AboutPage() {
   return (
     <div className="bg-background">
       <section className="relative w-full h-[50vh]">
-        <Image 
-          src="/482346712_962123602768501_369481951629583065_n.jpg" 
-          alt="Rabbaniyah Educare students in a classroom" 
-          layout="fill" 
-          objectFit="cover"
-          priority
-        />
+        <div className="absolute inset-0">
+            <Image 
+              src="/482346712_962123602768501_369481951629583065_n.jpg" 
+              alt="Rabbaniyah Educare students in a classroom" 
+              layout="fill" 
+              objectFit="cover"
+              className="brightness-75"
+              priority
+            />
+             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        </div>
       </section>
 
       <section className="py-16 md:py-24">
