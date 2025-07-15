@@ -13,7 +13,7 @@ const teamMembers = [
 export default function AboutPage() {
   return (
     <div className="bg-background">
-      <section className="relative w-full h-[50vh] bg-secondary">
+      <section className="relative w-full h-[50vh]">
         <Image 
           src="/482346712_962123602768501_369481951629583065_n.jpg" 
           alt="Rabbaniyah Educare students in a classroom" 
@@ -21,7 +21,6 @@ export default function AboutPage() {
           objectFit="cover"
           priority
         />
-        <div className="absolute inset-0 bg-black/30" />
       </section>
 
       <section className="py-16 md:py-24">
