@@ -120,7 +120,7 @@ export default function GraduatesPage() {
             <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="container mx-auto max-w-7xl px-4 text-center relative">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline">Our Graduates</h1>
+          <h1 className="text-4xl md:text-5xl font-bold font-headline">Our Community</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-white/90">
             Celebrating the achievements and bright futures of our students. See the faces of the next generation of leaders, thinkers, and innovators.
           </p>
@@ -129,33 +129,13 @@ export default function GraduatesPage() {
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-7xl px-4">
-            <Tabs defaultValue="graduates" className="w-full">
+            <Tabs defaultValue="community" className="w-full">
               <TabsList className="grid w-full grid-cols-3 max-w-lg mx-auto mb-12">
+                <TabsTrigger value="community">Community Photos</TabsTrigger>
                 <TabsTrigger value="graduates">Our Graduates</TabsTrigger>
                 <TabsTrigger value="ceremony">Ceremony</TabsTrigger>
-                <TabsTrigger value="community">Community Photos</TabsTrigger>
               </TabsList>
-              <TabsContent value="graduates">
-                <Card>
-                    <CardHeader>
-                        <CardTitle className="font-headline text-center">Celebrating Our Students</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <GalleryGrid images={graduatesImages} onImageClick={setSelectedImage} />
-                    </CardContent>
-                </Card>
-              </TabsContent>
-              <TabsContent value="ceremony">
-                 <Card>
-                    <CardHeader>
-                        <CardTitle className="font-headline text-center">Graduation Day</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <GalleryGrid images={ceremonyImages} onImageClick={setSelectedImage} />
-                    </CardContent>
-                </Card>
-              </TabsContent>
-               <TabsContent value="community">
+              <TabsContent value="community">
                  <Card>
                     <CardHeader className="text-center">
                         <CardTitle className="font-headline">Latest Updates from Our Community</CardTitle>
@@ -181,6 +161,26 @@ export default function GraduatesPage() {
                                 <Facebook className="mr-2 h-5 w-5" /> View on Facebook
                             </Link>
                         </Button>
+                    </CardContent>
+                </Card>
+              </TabsContent>
+              <TabsContent value="graduates">
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="font-headline text-center">Celebrating Our Students</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <GalleryGrid images={graduatesImages} onImageClick={setSelectedImage} />
+                    </CardContent>
+                </Card>
+              </TabsContent>
+              <TabsContent value="ceremony">
+                 <Card>
+                    <CardHeader>
+                        <CardTitle className="font-headline text-center">Graduation Day</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <GalleryGrid images={ceremonyImages} onImageClick={setSelectedImage} />
                     </CardContent>
                 </Card>
               </TabsContent>
