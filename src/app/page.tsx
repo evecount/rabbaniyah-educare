@@ -10,9 +10,8 @@ export default function Home() {
       <main className="flex-1">
         <section className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white">
           <Image
-            src="https://placehold.co/1920x1080.png"
-            alt="Children learning in a classroom"
-            data-ai-hint="children classroom"
+            src="/group-photo.jpg"
+            alt="A group of Rabbaniyah Educare students and staff"
             layout="fill"
             objectFit="cover"
             className="absolute z-0 brightness-50"
