@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
+        <section className="w-full pt-12 md:pt-16 lg:pt-20 bg-secondary">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-8 text-center">
+            <div className="flex flex-col items-center space-y-6 text-center">
               <div className="space-y-4">
                 <div className="w-full max-w-[25vw] mx-auto">
                     <Image
@@ -18,7 +18,7 @@ export default function Home() {
                         alt="Rabbaniyah Educare Logo"
                         width={400}
                         height={400}
-                        className="w-full h-auto mb-6"
+                        className="w-full h-auto mb-4"
                         priority
                     />
                 </div>
@@ -37,7 +37,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full pt-16">
+          <div className="w-full pt-12">
             <Image
               src="/485721469_970378141943047_4986339430387739828_n.jpg"
               alt="A group of Rabbaniyah Educare students and staff"
