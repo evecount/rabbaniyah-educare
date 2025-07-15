@@ -106,10 +106,10 @@ export default function Home() {
                 <h3 className="text-2xl font-headline text-center">FRIDAY FOOD DONATION DROP-OFF</h3>
               </div>
               <div className="order-1 md:order-2">
-                <Image src="https://placehold.co/600x400.png" alt="Food donation" data-ai-hint="food donation" width={600} height={400} className="w-full h-full object-cover" />
+                <Image src="/friday_food_donation.jpg" alt="Food donation" data-ai-hint="food donation" width={600} height={400} className="w-full h-full object-cover" />
               </div>
               <div className="order-3">
-                 <Image src="https://placehold.co/600x400.png" alt="School supplies" data-ai-hint="school supplies" width={600} height={400} className="w-full h-full object-cover" />
+                 <Image src="/donate_school_supplies.jpg" alt="School supplies" data-ai-hint="school supplies" width={600} height={400} className="w-full h-full object-cover" />
               </div>
                <div className="flex items-center justify-center p-8 md:p-12 order-4">
                 <h3 className="text-2xl font-headline text-center">DONATE SCHOOL SUPPLIES AND STATIONERY</h3>
@@ -118,10 +118,10 @@ export default function Home() {
                 <h3 className="text-2xl font-headline text-center">TEACHING VOLUNTEER</h3>
               </div>
               <div className="order-5 md:order-6">
-                <Image src="https://placehold.co/600x400.png" alt="Teaching volunteer" data-ai-hint="teaching online" width={600} height={400} className="w-full h-full object-cover" />
+                <Image src="/teaching_volunteer.jpg" alt="Teaching volunteer" data-ai-hint="teaching online" width={600} height={400} className="w-full h-full object-cover" />
               </div>
               <div className="order-7">
-                <Image src="https://placehold.co/600x400.png" alt="Parent support" data-ai-hint="woman writing" width={600} height={400} className="w-full h-full object-cover" />
+                <Image src="/parent_support_program.jpg" alt="Parent support" data-ai-hint="woman writing" width={600} height={400} className="w-full h-full object-cover" />
               </div>
               <div className="flex items-center justify-center p-8 md:p-12 order-8">
                 <h3 className="text-2xl font-headline text-center">PARENT SUPPORT PROGRAM</h3>
