@@ -5,12 +5,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const graduatesImages = [
-    { src: "/ceremony/489828278_986320317015496_8687854344072611592_n.jpg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
-    { src: "/ceremony/489878215_986321160348745_7760226463942364009_n.jpg", hint: "student receiving award", alt: "A student receiving an award on stage" },
-    { src: "/ceremony/489927520_986320393682155_7547361732644265057_n.jpg", hint: "students performing on stage", alt: "Students performing during the graduation ceremony" },
-    { src: "/ceremony/489928475_986321010348760_643690623694086886_n.jpg", hint: "graduates holding certificates", alt: "Graduates proudly holding their certificates" },
-    { src: "/ceremony/490294143_986319327015595_1220846640072945418_n.jpg", hint: "graduate giving speech", alt: "A graduate giving a speech at the podium" },
-    { src: "/ceremony/490294773_986320470348814_6449333909180769396_n.jpg", hint: "happy graduates", alt: "A group of happy graduates posing for a photo" },
+    { src: "/graduates/489828278_986320317015496_8687854344072611592_n.jpg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
+    { src: "/graduates/489878215_986321160348745_7760226463942364009_n.jpg", hint: "student receiving award", alt: "A student receiving an award on stage" },
+    { src: "/graduates/489927520_986320393682155_7547361732644265057_n.jpg", hint: "students performing on stage", alt: "Students performing during the graduation ceremony" },
+    { src: "/graduates/489928475_986321010348760_643690623694086886_n.jpg", hint: "graduates holding certificates", alt: "Graduates proudly holding their certificates" },
+    { src: "/graduates/490294143_986319327015595_1220846640072945418_n.jpg", hint: "graduate giving speech", alt: "A graduate giving a speech at the podium" },
+    { src: "/graduates/490294773_986320470348814_6449333909180769396_n.jpg", hint: "happy graduates", alt: "A group of happy graduates posing for a photo" },
 ]
 
 const ceremonyImages = [
@@ -51,7 +51,7 @@ export default function GraduatesPage() {
     <div className="bg-background">
        <section className="relative py-20 md:py-32 bg-secondary">
         <div className="container mx-auto max-w-7xl px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline">Our Graduates & Ceremonies</h1>
+          <h1 className="text-4xl md:text-5xl font-bold font-headline">Our Graduates</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
             Celebrating the achievements and bright futures of our students. See the faces of the next generation of leaders, thinkers, and innovators.
           </p>
