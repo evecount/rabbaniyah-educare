@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { HeartHandshake, Mail, Phone, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -8,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-4">
             <Link href="/" className="flex items-center gap-2">
-                <HeartHandshake className="h-8 w-8 text-primary" />
+                <Image src="/RabbaniyahEducareLogo.png" alt="Rabbaniyah Educare Logo" width={40} height={40} className="h-10 w-auto" />
                 <span className="font-bold font-headline text-xl">Rabbaniyah Educare</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
