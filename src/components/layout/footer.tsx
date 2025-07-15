@@ -13,8 +13,8 @@ export function Footer() {
                 <Image src="/RabbaniyahEducareLogo.png" alt="Rabbaniyah Educare Logo" width={40} height={40} className="h-10 w-auto" />
                 <span className="font-bold font-headline text-xl">Rabbaniyah Educare</span>
             </Link>
-            <p className="mt-4 text-sm text-muted-foreground">
-              Empowering communities through accessible and quality education for all.
+            <p className="mt-4 text-sm text-muted-foreground italic">
+              "The best among you are those that bring the greatest benefit to others" ~Hadith
             </p>
             <div className="mt-6 flex space-x-4">
               <Link href="https://www.facebook.com/rabbaniyaheducare/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary"><span className="sr-only">Facebook</span><Facebook className="h-6 w-6" /></Link>
