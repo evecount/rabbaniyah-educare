@@ -51,19 +51,18 @@ export function ContactForm() {
         },
     })
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsSubmitting(true)
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000))
-
-    console.log(values)
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    const mailtoLink = `mailto:rabbaniyaheducare@gmail.com?subject=${encodeURIComponent(values.subject)}&body=${encodeURIComponent(
+        `Name: ${values.name}\nEmail: ${values.email}\n\nMessage:\n${values.message}`
+    )}`;
+    
+    window.location.href = mailtoLink;
     
     toast({
-        title: "Message Sent!",
-        description: "Thank you for contacting us. We will get back to you shortly.",
+        title: "Opening Email Client",
+        description: "Please complete sending the email in your email application.",
     })
     form.reset()
-    setIsSubmitting(false)
   }
 
   return (
@@ -121,8 +120,8 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" disabled={isSubmitting} className="w-full">
-            {isSubmitting ? (
+        <Button type="submit" disabled={form.formState.isSubmitting} className="w-full">
+            {form.formState.isSubmitting ? (
                 <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                 Submitting...
