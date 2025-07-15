@@ -1,34 +1,34 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { DollarSign, Handshake, Shirt, Users } from "lucide-react";
+import { Handshake, Utensils, BookOpen, Users } from "lucide-react";
 import Link from "next/link";
 
 const contributionOptions = [
     {
-        icon: Shirt,
-        title: "Donate Your School Uniforms",
-        description: "Have under-sized school uniforms that are used but not abused? We welcome in-kind donations to help our students look smart and feel confident.",
+        icon: Utensils,
+        title: "Friday Food Donation Drop-off",
+        description: "Help us provide nutritious meals. We welcome food donations to support our students and their families, with a special drop-off every Friday.",
+        buttonText: "Get Details",
+        href: "/contact"
+    },
+    {
+        icon: BookOpen,
+        title: "Donate School Supplies",
+        description: "Support our students' learning by donating new or gently used school supplies and stationery. Every pencil and notebook makes a difference.",
         buttonText: "Learn More",
         href: "/contact"
     },
     {
         icon: Users,
-        title: "Volunteer Your Time",
-        description: "Join our team of passionate volunteers. Whether you can help in the classroom, with administrative tasks, or at events, your time is invaluable to us.",
+        title: "Teaching Volunteer",
+        description: "Join our team of passionate volunteers. Whether you can help in the classroom or with administrative tasks, your time is invaluable to us.",
         buttonText: "Help Us Soar",
         href: "/contact"
     },
     {
-        icon: DollarSign,
-        title: "Make a Donation",
-        description: "Your financial support helps us fund our core programs, from school supplies to teacher salaries. Every contribution, big or small, makes a significant impact.",
-        buttonText: "Show Your Support",
-        href: "/contact"
-    },
-    {
         icon: Handshake,
-        title: "Partner With Us",
-        description: "Partner with us to create a lasting impact. We offer various corporate sponsorship opportunities that align with your company's social responsibility goals.",
+        title: "Parent Support Program",
+        description: "Partner with us to empower parents and guardians within the community. Your support helps us provide workshops and resources for families.",
         buttonText: "Have an Impact",
         href: "/contact"
     }
