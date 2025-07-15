@@ -51,8 +51,9 @@ export default function Home() {
                     />
                 </div>
                 <div className="text-3xl md:text-4xl font-headline tracking-tight text-foreground">
-                    <p className="font-extrabold">RABBANIYAH EDUCARE</p>
-                    <p className="text-xl md:text-2xl mt-2 font-body">(REFUGEE EDUCATION CENTER, MALAYSIA)</p>
+                    <span className="font-extrabold">RABBANIYAH EDUCARE</span>
+                    <br />
+                    <span className="text-xl md:text-2xl mt-2 font-body">(REFUGEE EDUCATION CENTER, MALAYSIA)</span>
                 </div>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
