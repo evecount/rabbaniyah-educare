@@ -5,31 +5,31 @@ import Link from "next/link";
 
 const contributionOptions = [
     {
-        icon: DollarSign,
-        title: "Make a Donation",
-        description: "Your financial support helps us fund our core programs, from school supplies to teacher salaries. Every contribution, big or small, makes a significant impact.",
-        buttonText: "Donate Now",
+        icon: Shirt,
+        title: "Donate Your School Uniforms",
+        description: "Have under-sized school uniforms that are used but not abused? We welcome in-kind donations to help our students look smart and feel confident.",
+        buttonText: "Learn More",
         href: "/contact"
     },
     {
         icon: Users,
         title: "Volunteer Your Time",
         description: "Join our team of passionate volunteers. Whether you can help in the classroom, with administrative tasks, or at events, your time is invaluable to us.",
-        buttonText: "Become a Volunteer",
+        buttonText: "Help Us Soar",
         href: "/contact"
     },
     {
-        icon: Shirt,
-        title: "Donate School Uniforms",
-        description: "Have under-sized school uniforms that are used but not abused? We welcome in-kind donations to help our students look smart and feel confident.",
-        buttonText: "Learn More",
+        icon: DollarSign,
+        title: "Make a Donation",
+        description: "Your financial support helps us fund our core programs, from school supplies to teacher salaries. Every contribution, big or small, makes a significant impact.",
+        buttonText: "Show Your Support",
         href: "/contact"
     },
     {
         icon: Handshake,
         title: "Partner With Us",
         description: "Partner with us to create a lasting impact. We offer various corporate sponsorship opportunities that align with your company's social responsibility goals.",
-        buttonText: "Partner With Us",
+        buttonText: "Have an Impact",
         href: "/contact"
     }
 ]
