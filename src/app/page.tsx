@@ -14,7 +14,7 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="w-full max-w-[25vw] mx-auto">
                     <Image
-                        src="/RabbaniyahEducareLogo.png"
+                        src="/RabbaniyahLogo_Large.png"
                         alt="Rabbaniyah Educare Logo"
                         width={400}
                         height={400}
