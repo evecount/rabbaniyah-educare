@@ -22,7 +22,7 @@ export default function Home() {
                         priority
                     />
                 </div>
-                <div className="text-3xl md:text-4xl font-headline tracking-tight text-primary">
+                <div className="text-3xl md:text-4xl font-headline tracking-tight text-foreground">
                     <p className="font-extrabold">RABBANIYAH EDUCARE</p>
                     <p className="text-xl md:text-2xl mt-2 font-body">REFUGEE EDUCATION CENTER</p>
                 </div>
