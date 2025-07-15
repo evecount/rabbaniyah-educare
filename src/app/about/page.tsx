@@ -126,7 +126,7 @@ export default function AboutPage() {
                     <AvatarImage src={member.image} alt={member.alt} data-ai-hint={member.hint} />
                     <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                   </Avatar>
-                  <h3 className="text-lg font-headline font-semibold">{member.name}</h3>
+                  <h3 className="text-lg font-body font-semibold">{member.name}</h3>
                   <p className="text-primary">{member.role}</p>
                 </CardContent>
               </Card>
