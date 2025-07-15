@@ -2,11 +2,14 @@
 "use client"
 import * as React from "react"
 import Image from "next/image";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { HeroCarousel } from "@/components/layout/hero-carousel";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Facebook } from "lucide-react";
 
 const graduatesImages = [
     { src: "/graduates/491548966_989507160030145_8572996303758288139_n.jpg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
@@ -127,9 +130,10 @@ export default function GraduatesPage() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-7xl px-4">
             <Tabs defaultValue="graduates" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto mb-12">
+              <TabsList className="grid w-full grid-cols-3 max-w-lg mx-auto mb-12">
                 <TabsTrigger value="graduates">Our Graduates</TabsTrigger>
                 <TabsTrigger value="ceremony">Ceremony</TabsTrigger>
+                <TabsTrigger value="community">Community Photos</TabsTrigger>
               </TabsList>
               <TabsContent value="graduates">
                 <Card>
@@ -148,6 +152,26 @@ export default function GraduatesPage() {
                     </CardHeader>
                     <CardContent>
                         <GalleryGrid images={ceremonyImages} onImageClick={setSelectedImage} />
+                    </CardContent>
+                </Card>
+              </TabsContent>
+               <TabsContent value="community">
+                 <Card>
+                    <CardHeader className="text-center">
+                        <CardTitle className="font-headline">Latest Updates from Our Community</CardTitle>
+                        <CardDescription>
+                            See the latest photos and events directly on our Facebook page.
+                        </CardDescription>
+                    </CardHeader>
+                    <CardContent className="flex flex-col items-center justify-center text-center p-8 min-h-[300px]">
+                        <p className="text-muted-foreground mb-6 max-w-md">
+                            Our Facebook community is always active with new photos from school events, student activities, and graduation ceremonies. Click the button below to see what's new!
+                        </p>
+                        <Button asChild size="lg">
+                            <Link href="https://www.facebook.com/rabbaniyaheducare/photos" target="_blank" rel="noopener noreferrer">
+                                <Facebook className="mr-2 h-5 w-5" /> View on Facebook
+                            </Link>
+                        </Button>
                     </CardContent>
                 </Card>
               </TabsContent>
@@ -171,7 +195,3 @@ export default function GraduatesPage() {
     </div>
   );
 }
-
-    
-
-    
