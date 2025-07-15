@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Handshake, Utensils, BookOpen, Users } from "lucide-react";
@@ -42,21 +43,21 @@ const contributionOptions = [
 export default function ContributePage() {
   return (
     <div className="bg-background">
-       <section className="relative py-20 md:py-32 bg-secondary">
+       <section className="relative py-20 md:py-32 text-white">
          <div className="absolute inset-0">
             <Image 
                 src="/481073502_951477263833135_8640512998525980846_n.jpg"
                 alt="Students collaborating in a classroom"
                 layout="fill"
                 objectFit="cover"
-                className="opacity-30"
+                className="brightness-75"
                 data-ai-hint="students classroom"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         </div>
         <div className="container mx-auto max-w-7xl px-4 text-center relative">
           <h1 className="text-4xl md:text-5xl font-bold font-headline">Get Involved</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-white/90">
             Your support is crucial to our success. Discover the many ways you can contribute to our cause and help us create brighter futures.
           </p>
         </div>
