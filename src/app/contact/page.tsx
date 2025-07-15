@@ -28,6 +28,10 @@ export default function ContactPage() {
                     </Card>
                 </div>
                 <div className="md:col-span-4">
+                    <div className="space-y-2 mb-8 text-muted-foreground">
+                        <p>Established in 2008, the Rabbaniyah Rohingya School for Refugees (Malaysia) wants to spread our message of hope and compassion. We focus on providing a future by giving children access to education.</p>
+                        <p>Our school is located in Ampang-Malaysia, and we focus on providing education to children of the Rohingya refugee community in Kuala Lumpur, Malaysia.</p>
+                    </div>
                     <h2 className="text-2xl font-bold font-headline mb-6">Our Information</h2>
                     <div className="space-y-6">
                         <div className="flex items-start gap-4">
