@@ -82,9 +82,9 @@ export default function ProgramsPage() {
         <section className="py-16 md:py-24 bg-secondary">
           <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <Card className="bg-primary text-primary-foreground text-center p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-bold font-headline">Have a Program Idea?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">Sponsor Our Programs</h2>
               <p className="mt-4 text-lg max-w-2xl mx-auto">
-                We are always open to new partnerships and ideas. If you want to collaborate, please get in touch.
+                Your sponsorship can provide essential resources for our students and help us sustain our educational programs. Partner with us to make a lasting impact.
               </p>
               <Button size="lg" variant="secondary" className="mt-8" asChild>
                 <Link href="/contact">Contact Us</Link>
