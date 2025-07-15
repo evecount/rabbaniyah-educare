@@ -5,8 +5,8 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  // IMPORTANT: Update this with your actual production URL
-  metadataBase: new URL('https://www.rabbaniyah-educare.org'), 
+  // IMPORTANT: Update this with your actual production URL when ready
+  // metadataBase: new URL('https://www.rabbaniyah-educare.org'), 
   title: {
     default: 'Rabbaniyah Educare | Refugee Education Center, Malaysia',
     template: '%s | Rabbaniyah Educare',
