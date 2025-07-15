@@ -1,6 +1,6 @@
 import { ContactForm } from "@/components/contact-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -59,6 +59,15 @@ export default function ContactPage() {
                             <div>
                                 <h3 className="font-semibold font-headline">Phone</h3>
                                 <a href="tel:+601164099760" className="text-muted-foreground hover:text-primary transition-colors">+60 11-6409 9760</a>
+                            </div>
+                        </div>
+                         <div className="flex items-start gap-4">
+                            <div className="bg-primary/10 p-3 rounded-full">
+                                <Facebook className="h-6 w-6 text-primary" />
+                            </div>
+                            <div>
+                                <h3 className="font-semibold font-headline">Join Our Community</h3>
+                                <a href="https://www.facebook.com/rabbaniyaheducare/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">Follow us on Facebook</a>
                             </div>
                         </div>
                     </div>
