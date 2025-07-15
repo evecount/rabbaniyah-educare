@@ -12,6 +12,13 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-4">
+                <Image
+                    src="/RabbaniyahEducareLogo.png"
+                    alt="Rabbaniyah Educare Logo"
+                    width={100}
+                    height={100}
+                    className="mx-auto mb-6"
+                />
                 <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tight text-primary">
                   Education, Empowerment, Excellence.
                 </h1>
