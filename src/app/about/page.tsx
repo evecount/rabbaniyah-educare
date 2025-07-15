@@ -23,6 +23,9 @@ export default function AboutPage() {
               priority
             />
         </div>
+        <div className="container mx-auto max-w-7xl px-4 text-center relative">
+            {/* This div is necessary to enforce the correct height based on padding */}
+        </div>
       </section>
 
       <section className="py-16 md:py-24">
