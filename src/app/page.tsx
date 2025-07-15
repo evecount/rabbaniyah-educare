@@ -4,6 +4,29 @@ import { ArrowRight, BookOpen, Heart, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+const initiatives = [
+  {
+    title: "Friday Food Donation Drop-off",
+    image: "/fridayfooddonation.jpeg",
+    hint: "food donation"
+  },
+  {
+    title: "Donate School Supplies and Stationery",
+    image: "/donatesupplies.jpeg",
+    hint: "school supplies"
+  },
+  {
+    title: "Teaching Volunteer",
+    image: "/teachingvolunteer.jpeg",
+    hint: "teaching online"
+  },
+  {
+    title: "Parent Support Program",
+    image: "/parentsupportprogram.jpeg",
+    hint: "woman writing"
+  }
+];
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -100,32 +123,23 @@ export default function Home() {
         </section>
 
         <section id="initiatives" className="py-16 md:py-24 bg-secondary">
-          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-              <div className="flex items-center justify-center p-8 md:p-12 order-2 md:order-1">
-                <h3 className="text-2xl font-headline text-center">FRIDAY FOOD DONATION DROP-OFF</h3>
-              </div>
-              <div className="order-1 md:order-2">
-                <Image src="/fridayfooddonation.jpeg" alt="Food donation" data-ai-hint="food donation" width={600} height={400} className="w-full h-full object-cover" />
-              </div>
-              <div className="order-3">
-                 <Image src="/donatesupplies.jpeg" alt="School supplies" data-ai-hint="school supplies" width={600} height={400} className="w-full h-full object-cover" />
-              </div>
-               <div className="flex items-center justify-center p-8 md:p-12 order-4">
-                <h3 className="text-2xl font-headline text-center">DONATE SCHOOL SUPPLIES AND STATIONERY</h3>
-              </div>
-              <div className="flex items-center justify-center p-8 md:p-12 order-6 md:order-5">
-                <h3 className="text-2xl font-headline text-center">TEACHING VOLUNTEER</h3>
-              </div>
-              <div className="order-5 md:order-6">
-                <Image src="/teachingvolunteer.jpeg" alt="Teaching volunteer" data-ai-hint="teaching online" width={600} height={400} className="w-full h-full object-cover" />
-              </div>
-              <div className="order-7">
-                <Image src="/parentsupportprogram.jpeg" alt="Parent support" data-ai-hint="woman writing" width={600} height={400} className="w-full h-full object-cover" />
-              </div>
-              <div className="flex items-center justify-center p-8 md:p-12 order-8">
-                <h3 className="text-2xl font-headline text-center">PARENT SUPPORT PROGRAM</h3>
-              </div>
+          <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold font-headline text-center mb-12">Our Initiatives</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+              {initiatives.map((item) => (
+                <div key={item.title} className="flex items-center gap-6">
+                  <div className="relative w-24 h-24 shrink-0 rounded-md overflow-hidden shadow-md">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      data-ai-hint={item.hint}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-headline">{item.title}</h3>
+                </div>
+              ))}
             </div>
           </div>
         </section>
