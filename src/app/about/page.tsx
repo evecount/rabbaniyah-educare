@@ -1,14 +1,22 @@
-
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen, Target, Users } from "lucide-react";
 import Image from "next/image";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Rabbaniyah Educare',
+  description: 'Learn about the history, mission, and values of Rabbaniyah Educare. Discover how we began as a community-driven initiative in 2008 to serve Rohingya refugees in Malaysia.',
+  alternates: {
+    canonical: '/about',
+  },
+};
 
 const teamMembers = [
-  { name: "Dr Qutub Shah", role: "Main Contact", image: "https://placehold.co/100x100.png", hint: "man portrait" },
-  { name: "Teacher", role: "Teacher", image: "https://placehold.co/100x100.png", hint: "person portrait" },
-  { name: "Teacher", role: "Teacher", image: "https://placehold.co/100x100.png", hint: "person portrait" },
-  { name: "Teacher", role: "Teacher", image: "https://placehold.co/100x100.png", hint: "person portrait" },
+  { name: "Dr Qutub Shah", role: "Main Contact", image: "https://placehold.co/100x100.png", hint: "man portrait", alt: "Portrait of Dr Qutub Shah" },
+  { name: "Teacher", role: "Teacher", image: "https://placehold.co/100x100.png", hint: "person portrait", alt: "Portrait of a Rabbaniyah Educare teacher" },
+  { name: "Teacher", role: "Teacher", image: "https://placehold.co/100x100.png", hint: "person portrait", alt: "Portrait of a Rabbaniyah Educare teacher" },
+  { name: "Teacher", role: "Teacher", image: "https://placehold.co/100x100.png", hint: "person portrait", alt: "Portrait of a Rabbaniyah Educare teacher" },
 ];
 
 export default function AboutPage() {
@@ -18,7 +26,7 @@ export default function AboutPage() {
         <div className="absolute inset-0">
             <Image 
               src="/482346712_962123602768501_369481951629583065_n.jpg" 
-              alt="Rabbaniyah Educare students in a classroom" 
+              alt="Rabbaniyah Educare students smiling in a classroom setting" 
               layout="fill" 
               objectFit="cover"
               priority
@@ -59,7 +67,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg">
-                <Image src="/490022399_986321943682000_6575542716052706994_n.jpg" alt="Rabbaniyah Educare students in class" layout="fill" objectFit="cover" data-ai-hint="students learning" />
+                <Image src="/490022399_986321943682000_6575542716052706994_n.jpg" alt="Rabbaniyah Educare students engaged in a classroom activity" layout="fill" objectFit="cover" data-ai-hint="students learning" />
             </div>
           </div>
         </div>
@@ -115,7 +123,7 @@ export default function AboutPage() {
               <Card key={index} className="text-center border-0 shadow-none">
                 <CardContent className="flex flex-col items-center p-6">
                   <Avatar className="w-24 h-24 mb-4">
-                    <AvatarImage src={member.image} alt={member.name} data-ai-hint={member.hint} />
+                    <AvatarImage src={member.image} alt={member.alt} data-ai-hint={member.hint} />
                     <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                   </Avatar>
                   <h3 className="text-lg font-headline font-semibold">{member.name}</h3>

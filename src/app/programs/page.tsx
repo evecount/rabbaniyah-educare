@@ -3,6 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { BookCopy, GraduationCap, Leaf, Users, Zap } from "lucide-react";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Our Educational Programs',
+  description: 'Explore the educational programs at Rabbaniyah Educare, including Pre-Primary, Primary, Secondary, Intensive Courses, and Tahfiz. Learn how we empower refugee students.',
+  alternates: {
+    canonical: '/programs',
+  },
+};
 
 const programs = [
   {
@@ -44,7 +53,7 @@ export default function ProgramsPage() {
          <div className="absolute inset-0">
             <Image 
                 src="/482346712_962123602768501_369481951629583065_n.jpg"
-                alt="Students in a classroom"
+                alt="Students listening attentively to a teacher in a classroom"
                 layout="fill"
                 objectFit="cover"
                 className="brightness-75"

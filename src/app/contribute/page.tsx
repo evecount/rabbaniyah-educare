@@ -1,9 +1,17 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Handshake, Utensils, BookOpen, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contribute & Get Involved',
+  description: 'Support Rabbaniyah Educare by donating, volunteering, or providing supplies. Your contribution makes a direct impact on the lives of refugee children. Find out how you can help.',
+  alternates: {
+    canonical: '/contribute',
+  },
+};
 
 const contributionOptions = [
     {
@@ -47,7 +55,7 @@ export default function ContributePage() {
          <div className="absolute inset-0">
             <Image 
                 src="/481073502_951477263833135_8640512998525980846_n.jpg"
-                alt="Students collaborating in a classroom"
+                alt="Students collaborating on a project in a classroom"
                 layout="fill"
                 objectFit="cover"
                 className="brightness-75"

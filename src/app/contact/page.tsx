@@ -1,9 +1,52 @@
 import { ContactForm } from "@/components/contact-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Facebook } from "lucide-react";
+import type { Metadata } from 'next';
+import Script from 'next/script';
+
+export const metadata: Metadata = {
+  title: 'Contact Us',
+  description: 'Get in touch with Rabbaniyah Educare. Find our address, email, and phone number. We welcome questions, partnership proposals, and volunteers.',
+  alternates: {
+    canonical: '/contact',
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "NonProfit",
+  "name": "Rabbaniyah Educare",
+  "url": "https://www.rabbaniyah-educare.org",
+  "logo": "https://www.rabbaniyah-educare.org/RabbaniyahEducareLogo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+60-11-6409-9760",
+    "contactType": "Customer Service",
+    "email": "rabbaniyaheducare@gmail.com"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lot 12421, Jalan Bunga Melati 15A, Taman Seraya",
+    "addressLocality": "Ampang",
+    "addressRegion": "Selangor",
+    "postalCode": "56100",
+    "addressCountry": "MY"
+  },
+  "sameAs": [
+    "https://www.facebook.com/rabbaniyaheducare/"
+  ]
+};
 
 export default function ContactPage() {
   return (
+    <>
+    <Script
+        id="organization-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationSchema),
+        }}
+      />
     <div className="bg-background">
        <section className="relative py-20 md:py-32 bg-primary/10">
         <div className="container mx-auto max-w-7xl px-4 text-center relative">
@@ -76,5 +119,6 @@ export default function ContactPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

@@ -5,9 +5,47 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Rabbaniyah Educare',
-  description: 'A website for Rabbaniyah Educare, focusing on their mission to provide education for all.',
-  keywords: ['education', 'charity', 'non-profit', 'community', 'Rabbaniyah Educare']
+  // IMPORTANT: Update this with your actual production URL
+  metadataBase: new URL('https://www.rabbaniyah-educare.org'), 
+  title: {
+    default: 'Rabbaniyah Educare | Refugee Education Center, Malaysia',
+    template: '%s | Rabbaniyah Educare',
+  },
+  description: 'Rabbaniyah Educare is a non-profit school providing education to Rohingya refugee children in Kuala Lumpur, Malaysia. Support our mission to create a brighter future.',
+  keywords: ['Rohingya refugee education', 'non-profit school Malaysia', 'Rabbaniyah Educare', 'support refugee children', 'donate to education', 'volunteer teaching Malaysia', 'Ampang refugee school', 'charity school Kuala Lumpur'],
+  openGraph: {
+    title: 'Rabbaniyah Educare | Refugee Education Center, Malaysia',
+    description: 'A non-profit school providing education and support to Rohingya refugee children in Kuala Lumpur.',
+    url: 'https://www.rabbaniyah-educare.org',
+    siteName: 'Rabbaniyah Educare',
+    images: [
+      {
+        url: '/Rabbaniyah_OG_Image.jpg', // Should be an absolute URL
+        width: 1200,
+        height: 630,
+        alt: 'Rabbaniyah Educare students in a classroom',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Rabbaniyah Educare | Refugee Education Center, Malaysia',
+    description: 'Support Rabbaniyah Educare, a non-profit school providing education to Rohingya refugee children in Kuala Lumpur.',
+    images: ['/Rabbaniyah_OG_Image.jpg'], // Should be an absolute URL
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({

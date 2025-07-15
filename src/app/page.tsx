@@ -1,32 +1,44 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, BookOpen, Heart, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Rabbaniyah Educare | Refugee Education Center, Malaysia',
+  description: 'Join Rabbaniyah Educare, a non-profit school in Malaysia, in our mission to provide quality education and a hopeful future for Rohingya refugee children. Learn how you can contribute.',
+  alternates: {
+    canonical: '/',
+  },
+};
 
 const initiatives = [
   {
     title: "Friday Food Donation Drop-off",
     image: "/fridayfooddonation.jpeg",
+    alt: "Volunteers preparing food packages for donation",
     hint: "food donation",
     link: "/contribute#food-donation"
   },
   {
     title: "Donate School Supplies",
     image: "/donatesupplies.jpeg",
+    alt: "A collection of colorful notebooks and pens",
     hint: "school supplies",
     link: "/contribute#school-supplies"
   },
   {
     title: "Teaching Volunteer",
     image: "/teachingvolunteer.jpeg",
+    alt: "A teacher assisting a young student with their work",
     hint: "teaching online",
     link: "/contribute#volunteer"
   },
   {
     title: "Parent Support Program",
     image: "/parentsupportprogram.jpeg",
+    alt: "A person writing in a notebook during a support meeting",
     hint: "woman writing",
     link: "/contribute#parent-support"
   }
@@ -69,7 +81,7 @@ export default function Home() {
           <div className="w-full">
             <Image
               src="/485721469_970378141943047_4986339430387739828_n.jpg"
-              alt="A group of Rabbaniyah Educare students and staff"
+              alt="A large group photo of Rabbaniyah Educare students and staff"
               width="1920"
               height="1080"
               className="w-full h-auto object-cover"
@@ -136,7 +148,7 @@ export default function Home() {
                   <div className="relative w-24 h-24 shrink-0 rounded-md overflow-hidden shadow-md">
                     <Image
                       src={item.image}
-                      alt={item.title}
+                      alt={item.alt}
                       data-ai-hint={item.hint}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform"
