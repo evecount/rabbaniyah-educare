@@ -11,12 +11,12 @@ import {
 } from "@/components/ui/carousel";
 
 const galleryImages = [
-    { src: "https://placehold.co/800x600.png", hint: "graduate student portrait", alt: "A portrait of a recent graduate" },
-    { src: "https://placehold.co/800x600.png", hint: "graduation ceremony students", alt: "Students celebrating at their graduation ceremony" },
-    { src: "https://placehold.co/800x600.png", hint: "graduates group photo", alt: "A group photo of the graduating class" },
-    { src: "https://placehold.co/800x600.png", hint: "student receiving diploma", alt: "A student proudly receiving their diploma" },
-    { src: "https://placehold.co/800x600.png", hint: "happy graduate", alt: "A smiling graduate looking towards the future" },
-    { src: "https://placehold.co/800x600.png", hint: "students throwing caps", alt: "Graduates throwing their caps in the air" },
+    { src: "/OurGraduates/IMG_4526.jpeg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
+    { src: "/OurGraduates/IMG_4532.jpeg", hint: "student receiving award", alt: "A student receiving an award on stage" },
+    { src: "/OurGraduates/IMG_4541.jpeg", hint: "students performing on stage", alt: "Students performing during the graduation ceremony" },
+    { src: "/OurGraduates/IMG_4542.jpeg", hint: "graduates holding certificates", alt: "Graduates proudly holding their certificates" },
+    { src: "/OurGraduates/IMG_4549.jpeg", hint: "graduate giving speech", alt: "A graduate giving a speech at the podium" },
+    { src: "/OurGraduates/IMG_4550.jpeg", hint: "happy graduates", alt: "A group of happy graduates posing for a photo" },
 ]
 
 export default function GraduatesPage() {
@@ -64,7 +64,7 @@ export default function GraduatesPage() {
          <div className="container mx-auto max-w-7xl px-4">
             <h2 className="text-3xl font-bold font-headline text-center mb-12">Success Stories</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {galleryImages.concat(galleryImages).slice(0, 8).map((image, index) => (
+                {galleryImages.concat(galleryImages.slice(0, 2)).map((image, index) => (
                     <div key={index} className="relative aspect-square rounded-lg overflow-hidden group">
                         <Image
                             src={image.src}
