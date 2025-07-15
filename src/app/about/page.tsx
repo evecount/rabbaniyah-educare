@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building, Target, Users } from "lucide-react";
+import { BookOpen, Target, Users } from "lucide-react";
 import Image from "next/image";
 
 const teamMembers = [
@@ -26,17 +26,26 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-7xl px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold font-headline mb-4 text-primary flex items-center gap-3"><Building className="w-8 h-8"/> Our History</h2>
+              <h2 className="text-3xl font-bold font-headline mb-4 text-primary flex items-center gap-3"><BookOpen className="w-8 h-8"/> Our Story</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Established in 2008, the Rabbaniyah Rohingya School for Refugees (Malaysia) wants to spread our message of hope and compassion. We focus on providing a future by giving children access to education. 
+                  In 2008, our non-profit school was established with the help of Rohingya individuals and local Malaysian supporters, to serve the Rohingya refugee community residing in Kuala Lumpur.
                 </p>
                 <p>
-                  Our school is located in Ampang-Malaysia, and we focus on providing education to children of the Rohingya refugee community in Kuala Lumpur, Malaysia.
+                  We currently serve 80 families in Kampung Tasik Tambahan located in Ampang, Selangor.
+                </p>
+                <p>
+                  More than 150,000 Rohingya refugees live in Malaysia. While some are registered under the United Nations High Commissioner for Refugees (UNHCR), a majority of them remain unregistered and unable to access medical and education resources or have stable careers.
+                </p>
+                <p>
+                  Currently, refugees are not allowed to attend any public school in Malaysia under existing Malaysian law. With a shortage of schools under the supervision of the UNHCR, the majority of refugee children are deprived of any kind of education.
+                </p>
+                <p className="font-bold text-foreground">
+                  Let's break this cycle. Help us build a new future.
                 </p>
               </div>
             </div>
-            <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+            <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg">
                 <Image src="https://placehold.co/600x450.png" data-ai-hint="refugee children school" alt="The first Rabbaniyah Educare center" layout="fill" objectFit="cover" />
             </div>
           </div>
