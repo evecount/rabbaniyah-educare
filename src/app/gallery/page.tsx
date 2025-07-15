@@ -70,11 +70,13 @@ export default function GraduatesPage() {
                             src={image.src}
                             alt={image.alt}
                             data-ai-hint={image.hint + " square"}
-                            layout="fill"
-                            objectFit="cover"
-                            className="group-hover:scale-105 transition-transform duration-300"
+                            width={400}
+                            height={400}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
-                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-end p-4">
+                            <p className="text-white text-sm font-medium">{image.alt}</p>
+                         </div>
                     </div>
                 ))}
             </div>
