@@ -13,14 +13,16 @@ const teamMembers = [
 export default function AboutPage() {
   return (
     <div className="bg-background">
-      <section className="relative w-full h-[50vh]">
-        <Image 
-          src="/482346712_962123602768501_369481951629583065_n.jpg" 
-          alt="Rabbaniyah Educare students in a classroom" 
-          layout="fill" 
-          objectFit="cover"
-          priority
-        />
+      <section className="relative w-full py-20 md:py-32">
+        <div className="absolute inset-0">
+            <Image 
+              src="/482346712_962123602768501_369481951629583065_n.jpg" 
+              alt="Rabbaniyah Educare students in a classroom" 
+              layout="fill" 
+              objectFit="cover"
+              priority
+            />
+        </div>
       </section>
 
       <section className="py-16 md:py-24">
