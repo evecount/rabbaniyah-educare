@@ -13,13 +13,15 @@ const teamMembers = [
 export default function AboutPage() {
   return (
     <div className="bg-background">
-      <section className="relative py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto max-w-7xl px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline">About Rabbaniyah Educare</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
-            Learn about our journey, our values, and the passionate team dedicated to making a difference.
-          </p>
-        </div>
+      <section className="relative w-full h-[50vh] bg-secondary">
+        <Image 
+          src="/482346712_962123602768501_369481951629583065_n.jpg" 
+          alt="Rabbaniyah Educare students in a classroom" 
+          layout="fill" 
+          objectFit="cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/30" />
       </section>
 
       <section className="py-16 md:py-24">
@@ -49,7 +51,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg">
-                <Image src="/482346712_962123602768501_369481951629583065_n.jpg" alt="Rabbaniyah Educare students in a classroom" layout="fill" objectFit="contain" />
+                <Image src="https://placehold.co/600x400.png" alt="Placeholder image" layout="fill" objectFit="cover" data-ai-hint="classroom students" />
             </div>
           </div>
         </div>
