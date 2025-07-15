@@ -163,7 +163,16 @@ export default function GraduatesPage() {
                             See the latest photos and events directly on our Facebook page.
                         </CardDescription>
                     </CardHeader>
-                    <CardContent className="flex flex-col items-center justify-center text-center p-8 min-h-[300px]">
+                    <CardContent className="flex flex-col items-center justify-center text-center p-8">
+                        <div className="mb-6">
+                            <Image 
+                                src="/FBinvite.png" 
+                                alt="Facebook page invite"
+                                width={500}
+                                height={262}
+                                className="rounded-lg shadow-md"
+                            />
+                        </div>
                         <p className="text-muted-foreground mb-6 max-w-md">
                             Our Facebook community is always active with new photos from school events, student activities, and graduation ceremonies. Click the button below to see what's new!
                         </p>
