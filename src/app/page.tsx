@@ -34,16 +34,16 @@ export default function Home() {
                       <Link href="/contribute">Get Involved</Link>
                   </Button>
               </div>
-              <div className="w-full max-w-4xl pt-8">
-                <Image
-                  src="/485721469_970378141943047_4986339430387739828_n.jpg"
-                  alt="A group of Rabbaniyah Educare students and staff"
-                  width="1200"
-                  height="675"
-                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover"
-                />
-              </div>
             </div>
+          </div>
+          <div className="w-full pt-16">
+            <Image
+              src="/485721469_970378141943047_4986339430387739828_n.jpg"
+              alt="A group of Rabbaniyah Educare students and staff"
+              width="1920"
+              height="1080"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </section>
 
