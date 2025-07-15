@@ -38,7 +38,10 @@ export default function AboutPage() {
                   More than 150,000 Rohingya refugees live in Malaysia. While some are registered under the United Nations High Commissioner for Refugees (UNHCR), a majority of them remain unregistered and unable to access medical and education resources or have stable careers.
                 </p>
                 <p>
-                  Currently, refugees are not allowed to attend any public school in Malaysia under existing Malaysian law. With a shortage of schools under the supervision of the UNHCR, the majority of refugee children are deprived of any kind of education.
+                  Currently, refugees are not allowed to attend any public school in Malaysia under existing Malaysian law.
+                </p>
+                <p>
+                  With a shortage of schools under the supervision of the UNHCR, the majority of refugee children are deprived of any kind of education.
                 </p>
                 <p className="font-bold text-foreground">
                   Let's break this cycle. Help us build a new future.
@@ -46,7 +49,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg">
-                <Image src="https://placehold.co/600x450.png" data-ai-hint="refugee children school" alt="The first Rabbaniyah Educare center" layout="fill" objectFit="cover" />
+                <Image src="/509283967_1035849948729199_4214150284947060650_n.jpg" data-ai-hint="refugee children school" alt="The first Rabbaniyah Educare center" layout="fill" objectFit="cover" />
             </div>
           </div>
         </div>
