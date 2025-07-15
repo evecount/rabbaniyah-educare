@@ -8,22 +8,26 @@ const initiatives = [
   {
     title: "Friday Food Donation Drop-off",
     image: "/fridayfooddonation.jpeg",
-    hint: "food donation"
+    hint: "food donation",
+    link: "/contribute#food-donation"
   },
   {
-    title: "Donate School Supplies and Stationery",
+    title: "Donate School Supplies",
     image: "/donatesupplies.jpeg",
-    hint: "school supplies"
+    hint: "school supplies",
+    link: "/contribute#school-supplies"
   },
   {
     title: "Teaching Volunteer",
     image: "/teachingvolunteer.jpeg",
-    hint: "teaching online"
+    hint: "teaching online",
+    link: "/contribute#volunteer"
   },
   {
     title: "Parent Support Program",
     image: "/parentsupportprogram.jpeg",
-    hint: "woman writing"
+    hint: "woman writing",
+    link: "/contribute#parent-support"
   }
 ];
 
@@ -127,18 +131,18 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold font-headline text-center mb-12">Our Initiatives</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
               {initiatives.map((item) => (
-                <div key={item.title} className="flex items-center gap-6">
+                <Link key={item.title} href={item.link} className="flex items-center gap-6 group">
                   <div className="relative w-24 h-24 shrink-0 rounded-md overflow-hidden shadow-md">
                     <Image
                       src={item.image}
                       alt={item.title}
                       data-ai-hint={item.hint}
                       fill
-                      className="object-cover"
+                      className="object-cover group-hover:scale-105 transition-transform"
                     />
                   </div>
-                  <h3 className="text-xl font-headline">{item.title}</h3>
-                </div>
+                  <h3 className="text-xl font-headline group-hover:text-primary transition-colors">{item.title}</h3>
+                </Link>
               ))}
             </div>
           </div>

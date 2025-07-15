@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const contributionOptions = [
     {
+        id: "food-donation",
         icon: Utensils,
         title: "Friday Food Donation Drop-off",
         description: "Help us provide nutritious meals. We welcome food donations to support our students and their families, with a special drop-off every Friday.",
@@ -12,6 +13,7 @@ const contributionOptions = [
         href: "/contact"
     },
     {
+        id: "school-supplies",
         icon: BookOpen,
         title: "Donate School Supplies",
         description: "Support our students' learning by donating new or gently used school supplies and stationery. Every pencil and notebook makes a difference.",
@@ -19,6 +21,7 @@ const contributionOptions = [
         href: "/contact"
     },
     {
+        id: "volunteer",
         icon: Users,
         title: "Teaching Volunteer",
         description: "Join our team of passionate volunteers. Whether you can help in the classroom or with administrative tasks, your time is invaluable to us.",
@@ -26,6 +29,7 @@ const contributionOptions = [
         href: "/contact"
     },
     {
+        id: "parent-support",
         icon: Handshake,
         title: "Parent Support Program",
         description: "Partner with us to empower parents and guardians within the community. Your support helps us provide workshops and resources for families.",
@@ -48,9 +52,9 @@ export default function ContributePage() {
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-7xl px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div id="contribute-options" className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {contributionOptions.map((option) => (
-                    <Card key={option.title} className="flex flex-col text-center">
+                    <Card key={option.title} id={option.id} className="flex flex-col text-center">
                         <CardHeader className="items-center">
                            <div className="p-4 bg-primary/10 rounded-full w-fit">
                              <option.icon className="w-10 h-10 text-primary" />
@@ -70,34 +74,6 @@ export default function ContributePage() {
             </div>
         </div>
       </section>
-
-       <section className="py-16 md:py-24 bg-secondary">
-          <div className="container mx-auto max-w-7xl px-4">
-            <Card className="bg-white">
-                <CardHeader className="text-center">
-                    <h2 className="text-3xl font-bold font-headline text-primary">Frequently Asked Questions</h2>
-                    <CardDescription>Find answers to common questions about contributing.</CardDescription>
-                </CardHeader>
-                <CardContent>
-                    <div className="space-y-4 max-w-3xl mx-auto">
-                        <div>
-                            <h3 className="font-semibold font-headline">Is my donation tax-deductible?</h3>
-                            <p className="text-sm text-muted-foreground">Yes, Rabbaniyah Educare is a registered non-profit organization, and all donations are tax-deductible to the extent allowed by law. You will receive a receipt for your records.</p>
-                        </div>
-                        <div className="border-t pt-4">
-                            <h3 className="font-semibold font-headline">How much of my donation goes to the programs?</h3>
-                            <p className="text-sm text-muted-foreground">We are proud to say that 90% of every donation goes directly to our educational and community programs. The remaining 10% covers essential administrative costs to keep our organization running smoothly.</p>
-                        </div>
-                        <div className="border-t pt-4">
-                            <h3 className="font-semibold font-headline">Can I donate items other than money?</h3>
-                            <p className="text-sm text-muted-foreground">Absolutely! We welcome in-kind donations such as books, school supplies, computers, and furniture. Please contact us to coordinate a drop-off or pickup.</p>
-                        </div>
-                    </div>
-                </CardContent>
-            </Card>
-          </div>
-       </section>
-
     </div>
   );
 }
