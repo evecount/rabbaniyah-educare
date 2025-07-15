@@ -12,13 +12,16 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-4">
-                <Image
-                    src="/RabbaniyahEducareLogo.png"
-                    alt="Rabbaniyah Educare Logo"
-                    width={150}
-                    height={150}
-                    className="mx-auto mb-6"
-                />
+                <div className="w-full max-w-[25vw] mx-auto">
+                    <Image
+                        src="/RabbaniyahEducareLogo.png"
+                        alt="Rabbaniyah Educare Logo"
+                        width={400}
+                        height={400}
+                        className="w-full h-auto mb-6"
+                        priority
+                    />
+                </div>
                 <div className="text-3xl md:text-4xl font-headline tracking-tight text-primary">
                     <p className="font-extrabold">RABBANIYAH EDUCARE</p>
                     <p className="text-xl md:text-2xl mt-2 font-body">REFUGEE EDUCATION CENTER</p>
