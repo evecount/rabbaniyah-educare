@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
+import { HeroCarousel } from "@/components/layout/hero-carousel";
 
 const graduatesImages = [
     { src: "/graduates/491548966_989507160030145_8572996303758288139_n.jpg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
@@ -110,10 +111,14 @@ export default function GraduatesPage() {
 
   return (
     <div className="bg-background">
-       <section className="relative py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto max-w-7xl px-4 text-center">
+      <section className="relative py-20 md:py-32 text-white overflow-hidden">
+        <div className="absolute inset-0">
+            <HeroCarousel />
+            <div className="absolute inset-0 bg-black/50" />
+        </div>
+        <div className="container mx-auto max-w-7xl px-4 text-center relative">
           <h1 className="text-4xl md:text-5xl font-bold font-headline">Our Graduates</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-white/90">
             Celebrating the achievements and bright futures of our students. See the faces of the next generation of leaders, thinkers, and innovators.
           </p>
         </div>

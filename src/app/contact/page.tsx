@@ -1,14 +1,19 @@
 import { ContactForm } from "@/components/contact-form";
+import { HeroCarousel } from "@/components/layout/hero-carousel";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Facebook } from "lucide-react";
 
 export default function ContactPage() {
   return (
     <div className="bg-background">
-       <section className="relative py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto max-w-7xl px-4 text-center">
+       <section className="relative py-20 md:py-32 text-white overflow-hidden">
+        <div className="absolute inset-0">
+            <HeroCarousel />
+            <div className="absolute inset-0 bg-black/50" />
+        </div>
+        <div className="container mx-auto max-w-7xl px-4 text-center relative">
           <h1 className="text-4xl md:text-5xl font-bold font-headline">Contact Us</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-white/90">
             We'd love to hear from you. Whether you have a question, a suggestion, or want to partner with us, please reach out.
           </p>
         </div>
@@ -66,7 +71,7 @@ export default function ContactPage() {
                                 <Facebook className="h-6 w-6 text-primary" />
                             </div>
                             <div>
-                                <h3 className="font-semibold font-headline">Join Our Community</h3>
+                                <h3 className="font-headline font-semibold">Join Our Community</h3>
                                 <a href="https://www.facebook.com/rabbaniyaheducare/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors break-all">https://www.facebook.com/rabbaniyaheducare/</a>
                             </div>
                         </div>
