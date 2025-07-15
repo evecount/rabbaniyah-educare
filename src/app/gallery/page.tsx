@@ -6,7 +6,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
-import { HeroCarousel } from "@/components/layout/hero-carousel";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Facebook } from "lucide-react";
@@ -114,14 +113,10 @@ export default function GraduatesPage() {
 
   return (
     <div className="bg-background">
-      <section className="relative py-20 md:py-32 text-white overflow-hidden">
-        <div className="absolute inset-0">
-            <HeroCarousel />
-            <div className="absolute inset-0 bg-black/50" />
-        </div>
+      <section className="relative py-20 md:py-32 bg-primary/10">
         <div className="container mx-auto max-w-7xl px-4 text-center relative">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline">Our Community</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-white/90">
+          <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">Our Community</h1>
+          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary/80">
             Celebrating the achievements and bright futures of our students. See the faces of the next generation of leaders, thinkers, and innovators.
           </p>
         </div>

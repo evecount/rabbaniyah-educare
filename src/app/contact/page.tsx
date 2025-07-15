@@ -1,19 +1,14 @@
 import { ContactForm } from "@/components/contact-form";
-import { HeroCarousel } from "@/components/layout/hero-carousel";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Facebook } from "lucide-react";
 
 export default function ContactPage() {
   return (
     <div className="bg-background">
-       <section className="relative py-20 md:py-32 text-white overflow-hidden">
-        <div className="absolute inset-0">
-            <HeroCarousel />
-            <div className="absolute inset-0 bg-black/50" />
-        </div>
+       <section className="relative py-20 md:py-32 bg-primary/10">
         <div className="container mx-auto max-w-7xl px-4 text-center relative">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline">Contact Us</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-white/90">
+          <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">Contact Us</h1>
+          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary/80">
             We'd love to hear from you. Whether you have a question, a suggestion, or want to partner with us, please reach out.
           </p>
         </div>
@@ -83,5 +78,3 @@ export default function ContactPage() {
     </div>
   );
 }
-
-    
