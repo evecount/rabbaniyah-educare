@@ -51,10 +51,15 @@ export default function Home() {
         <section id="mission" className="py-16 md:py-24 bg-background">
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold font-headline">Our Core Mission</h2>
-              <p className="max-w-3xl mx-auto text-muted-foreground text-lg">
-                We are dedicated to breaking barriers in education, ensuring every child has the opportunity to learn, grow, and achieve their full potential in a nurturing and supportive environment.
-              </p>
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">RABBANIYAH EDUCARE (REFUGE EDUCATION CENTER, MALAYSIA)</h2>
+              <div className="max-w-3xl mx-auto text-muted-foreground text-lg space-y-4">
+                <p>
+                  Established in 2008, the Rabbaniyah Rohingya School for Refugees (Malaysia) wants to spread our message of hope and compassion. We focus on providing a future by giving children access to education.
+                </p>
+                <p>
+                  Our school is located in Ampang-Malaysia, and we focus on providing education to children of the Rohingya refugee community in Kuala Lumpur, Malaysia.
+                </p>
+              </div>
             </div>
             <div className="mt-12 grid gap-8 md:grid-cols-3">
               <Card className="text-center">
