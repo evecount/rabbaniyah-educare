@@ -1,5 +1,6 @@
+
 import Link from "next/link";
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook } from 'lucide-react';
 import Image from "next/image";
 
 export function Footer() {
@@ -16,9 +17,7 @@ export function Footer() {
               Empowering communities through accessible and quality education for all.
             </p>
             <div className="mt-6 flex space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary"><span className="sr-only">Facebook</span><Facebook className="h-6 w-6" /></Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary"><span className="sr-only">Twitter</span><Twitter className="h-6 w-6" /></Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary"><span className="sr-only">Instagram</span><Instagram className="h-6 w-6" /></Link>
+              <Link href="https://www.facebook.com/rabbaniyaheducare/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary"><span className="sr-only">Facebook</span><Facebook className="h-6 w-6" /></Link>
             </div>
           </div>
           <div className="md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8">
