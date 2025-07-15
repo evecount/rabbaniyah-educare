@@ -10,7 +10,7 @@ export default function Home() {
       <main className="flex-1">
         <section className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white">
           <Image
-            src="/group-photo.jpg"
+            src="/485721469_970378141943047_4986339430387739828_n.jpg"
             alt="A group of Rabbaniyah Educare students and staff"
             layout="fill"
             objectFit="cover"
