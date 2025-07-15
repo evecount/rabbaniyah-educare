@@ -15,16 +15,14 @@ export default function Home() {
                 <Image
                     src="/RabbaniyahEducareLogo.png"
                     alt="Rabbaniyah Educare Logo"
-                    width={100}
-                    height={100}
+                    width={150}
+                    height={150}
                     className="mx-auto mb-6"
                 />
-                <h1 className="text-4xl md:text-5xl font-bold font-headline tracking-tight text-primary">
-                  Education, Empowerment, Excellence.
-                </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Join Rabbaniyah Educare in our mission to provide quality education and create brighter futures for every child.
-                </p>
+                <div className="text-3xl md:text-4xl font-headline tracking-tight text-primary">
+                    <p className="font-extrabold">RABBANIYAH EDUCARE</p>
+                    <p className="text-xl md:text-2xl mt-2">REFUGEE EDUCATION CENTER</p>
+                </div>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button size="lg" asChild>
