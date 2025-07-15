@@ -26,7 +26,7 @@ export default function Home() {
             </p>
             <div className="space-x-4">
               <Button size="lg" asChild>
-                <Link href="/projects">Our Projects</Link>
+                <Link href="/programs">Our Programs</Link>
               </Button>
               <Button size="lg" variant="secondary" asChild>
                 <Link href="/contribute">Get Involved</Link>
@@ -84,52 +84,52 @@ export default function Home() {
         <section id="projects" className="py-16 md:py-24 bg-secondary">
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold font-headline">Featured Projects</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">Featured Programs</h2>
               <p className="max-w-3xl mx-auto text-muted-foreground text-lg">
                 From building schools to launching digital literacy programs, see how our work is making an impact.
               </p>
             </div>
             <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <Card className="overflow-hidden group">
-                <Image src="https://placehold.co/600x400.png" alt="Project 1" data-ai-hint="school building" width={600} height={400} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
+                <Image src="https://placehold.co/600x400.png" alt="Program 1" data-ai-hint="school building" width={600} height={400} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
                 <CardHeader>
-                  <CardTitle className="font-headline">New School Construction</CardTitle>
-                  <CardDescription>Building a safe and modern learning space for over 200 students in a rural community.</CardDescription>
+                  <CardTitle className="font-headline">Pre-Primary Education</CardTitle>
+                  <CardDescription>Nurturing young minds from the very beginning in a supportive learning environment.</CardDescription>
                 </CardHeader>
                 <CardFooter>
                   <Button variant="link" className="p-0" asChild>
-                    <Link href="/projects">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                    <Link href="/programs">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
                   </Button>
                 </CardFooter>
               </Card>
               <Card className="overflow-hidden group">
-                <Image src="https://placehold.co/600x400.png" alt="Project 2" data-ai-hint="library books" width={600} height={400} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
+                <Image src="https://placehold.co/600x400.png" alt="Program 2" data-ai-hint="library books" width={600} height={400} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
                 <CardHeader>
-                  <CardTitle className="font-headline">Mobile Library Initiative</CardTitle>
-                  <CardDescription>Bringing books and the joy of reading to remote villages with our custom-equipped library van.</CardDescription>
+                  <CardTitle className="font-headline">Primary & Secondary School</CardTitle>
+                  <CardDescription>Providing a comprehensive curriculum for primary and secondary level students.</CardDescription>
                 </CardHeader>
                 <CardFooter>
                   <Button variant="link" className="p-0" asChild>
-                    <Link href="/projects">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                    <Link href="/programs">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
                   </Button>
                 </CardFooter>
               </Card>
               <Card className="overflow-hidden group">
-                <Image src="https://placehold.co/600x400.png" alt="Project 3" data-ai-hint="teacher training" width={600} height={400} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
+                <Image src="https://placehold.co/600x400.png" alt="Program 3" data-ai-hint="quran study" width={600} height={400} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
                 <CardHeader>
-                  <CardTitle className="font-headline">Teacher Training Program</CardTitle>
-                  <CardDescription>Empowering local educators with modern teaching techniques and resources for better outcomes.</CardDescription>
+                  <CardTitle className="font-headline">Tahfiz Program</CardTitle>
+                  <CardDescription>A dedicated program for memorizing the Quran and understanding its teachings.</CardDescription>
                 </CardHeader>
                 <CardFooter>
                   <Button variant="link" className="p-0" asChild>
-                    <Link href="/projects">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                    <Link href="/programs">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
                   </Button>
                 </CardFooter>
               </Card>
             </div>
              <div className="text-center mt-12">
                 <Button size="lg" variant="outline" asChild>
-                    <Link href="/projects">View All Projects</Link>
+                    <Link href="/programs">View All Programs</Link>
                 </Button>
             </div>
           </div>
