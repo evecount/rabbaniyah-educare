@@ -4,10 +4,10 @@ import { BookOpen, Target, Users } from "lucide-react";
 import Image from "next/image";
 
 const teamMembers = [
-  { name: "Ahmad Abdullah", role: "Founder & CEO", image: "https://placehold.co/100x100.png", hint: "man portrait" },
-  { name: "Siti Fatimah", role: "Head of Education", image: "https://placehold.co/100x100.png", hint: "woman portrait" },
-  { name: "Zainab Yusuf", role: "Community Outreach Lead", image: "https://placehold.co/100x100.png", hint: "woman portrait" },
-  { name: "Omar Rashid", role: "Operations Manager", image: "https://placehold.co/100x100.png", hint: "man portrait" },
+  { name: "Dr Qutub Shah", role: "Main Contact", image: "https://placehold.co/100x100.png", hint: "man portrait" },
+  { name: "Teacher", role: "Teacher", image: "https://placehold.co/100x100.png", hint: "person portrait" },
+  { name: "Teacher", role: "Teacher", image: "https://placehold.co/100x100.png", hint: "person portrait" },
+  { name: "Teacher", role: "Teacher", image: "https://placehold.co/100x100.png", hint: "person portrait" },
 ];
 
 export default function AboutPage() {
@@ -101,8 +101,8 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member) => (
-              <Card key={member.name} className="text-center border-0 shadow-none">
+            {teamMembers.map((member, index) => (
+              <Card key={index} className="text-center border-0 shadow-none">
                 <CardContent className="flex flex-col items-center p-6">
                   <Avatar className="w-24 h-24 mb-4">
                     <AvatarImage src={member.image} alt={member.name} data-ai-hint={member.hint} />
