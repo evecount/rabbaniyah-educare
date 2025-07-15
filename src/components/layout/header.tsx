@@ -14,7 +14,7 @@ const navLinks = [
   { href: "/about", label: "About Us" },
   { href: "/programs", label: "Programs" },
   { href: "/contribute", label: "Contribute" },
-  { href: "/gallery", label: "Gallery" },
+  { href: "/gallery", label: "Our Graduates" },
   { href: "/contact", label: "Contact" },
 ];
 
