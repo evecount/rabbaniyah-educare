@@ -5,23 +5,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const graduatesImages = [
-    { src: "/graduates/IMG_4526.jpg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
-    { src: "/graduates/IMG_4532.jpg", hint: "student receiving award", alt: "A student receiving an award on stage" },
-    { src: "/graduates/IMG_4541.jpg", hint: "students performing on stage", alt: "Students performing during the graduation ceremony" },
-    { src: "/graduates/IMG_4542.jpg", hint: "graduates holding certificates", alt: "Graduates proudly holding their certificates" },
-    { src: "/graduates/IMG_4549.jpg", hint: "graduate giving speech", alt: "A graduate giving a speech at the podium" },
-    { src: "/graduates/IMG_4550.jpg", hint: "happy graduates", alt: "A group of happy graduates posing for a photo" },
+    { src: "/ceremony/489828278_986320317015496_8687854344072611592_n.jpg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
+    { src: "/ceremony/489878215_986321160348745_7760226463942364009_n.jpg", hint: "student receiving award", alt: "A student receiving an award on stage" },
+    { src: "/ceremony/489927520_986320393682155_7547361732644265057_n.jpg", hint: "students performing on stage", alt: "Students performing during the graduation ceremony" },
+    { src: "/ceremony/489928475_986321010348760_643690623694086886_n.jpg", hint: "graduates holding certificates", alt: "Graduates proudly holding their certificates" },
+    { src: "/ceremony/490294143_986319327015595_1220846640072945418_n.jpg", hint: "graduate giving speech", alt: "A graduate giving a speech at the podium" },
+    { src: "/ceremony/490294773_986320470348814_6449333909180769396_n.jpg", hint: "happy graduates", alt: "A group of happy graduates posing for a photo" },
 ]
 
 const ceremonyImages = [
-    { src: "/ceremony/IMG_4532.jpg", hint: "award ceremony", alt: "Student receiving an award during the ceremony." },
-    { src: "/ceremony/IMG_4535.jpg", hint: "students on stage", alt: "Students gathered on stage for a photo." },
-    { src: "/ceremony/IMG_4541.jpg", hint: "students performance", alt: "A group of students performing a dance." },
-    { src: "/ceremony/IMG_4542.jpg", hint: "graduation photo", alt: "A graduate receiving their certificate." },
-    { src: "/ceremony/IMG_4549.jpg", hint: "guest speaker", alt: "A speaker addressing the audience at the ceremony." },
-    { src: "/ceremony/IMG_4550.jpg", hint: "students posing", alt: "A group of students smiling and posing." },
-    { src: "/ceremony/IMG_4551.jpg", hint: "audience photo", alt: "The audience watching the graduation ceremony." },
-    { src: "/ceremony/IMG_4552.jpg", hint: "graduation diplomas", alt: "A stack of graduation diplomas ready to be presented." },
+    { src: "/ceremony/489828278_986320317015496_8687854344072611592_n.jpg", hint: "award ceremony", alt: "Student receiving an award during the ceremony." },
+    { src: "/ceremony/489878215_986321160348745_7760226463942364009_n.jpg", hint: "students on stage", alt: "Students gathered on stage for a photo." },
+    { src: "/ceremony/489927520_986320393682155_7547361732644265057_n.jpg", hint: "students performance", alt: "A group of students performing a dance." },
+    { src: "/ceremony/489928475_986321010348760_643690623694086886_n.jpg", hint: "graduation photo", alt: "A graduate receiving their certificate." },
+    { src: "/ceremony/490294143_986319327015595_1220846640072945418_n.jpg", hint: "guest speaker", alt: "A speaker addressing the audience at the ceremony." },
+    { src: "/ceremony/490294773_986320470348814_6449333909180769396_n.jpg", hint: "students posing", alt: "A group of students smiling and posing." },
+    { src: "/ceremony/490472919_986321310348730_336502758178114144_n.jpg", hint: "audience photo", alt: "The audience watching the graduation ceremony." },
+    { src: "/ceremony/490617277_986320807015447_8497441589136932483_n.jpg", hint: "graduation diplomas", alt: "A stack of graduation diplomas ready to be presented." },
 ]
 
 function GalleryGrid({ images }: { images: { src: string; alt: string; hint: string; }[] }) {
