@@ -40,21 +40,21 @@ const programs = [
 export default function ProgramsPage() {
   return (
     <div className="bg-background">
-      <section className="relative py-20 md:py-32 bg-secondary text-center">
+      <section className="relative py-20 md:py-32 text-white">
          <div className="absolute inset-0">
             <Image 
                 src="/482346712_962123602768501_369481951629583065_n.jpg"
                 alt="Students in a classroom"
                 layout="fill"
                 objectFit="cover"
-                className="opacity-20"
+                className="brightness-75"
                 data-ai-hint="students classroom"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         </div>
         <div className="container mx-auto max-w-7xl px-4 text-center relative">
           <h1 className="text-4xl md:text-5xl font-bold font-headline">Our Programs</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-white/90">
             Explore the initiatives that are transforming lives and communities.
           </p>
         </div>
