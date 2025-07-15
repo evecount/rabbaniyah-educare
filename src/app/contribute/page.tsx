@@ -49,10 +49,10 @@ export default function ContributePage() {
                 alt="Students collaborating in a classroom"
                 layout="fill"
                 objectFit="cover"
-                className="opacity-20"
+                className="opacity-30"
                 data-ai-hint="students classroom"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/80 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent"></div>
         </div>
         <div className="container mx-auto max-w-7xl px-4 text-center relative">
           <h1 className="text-4xl md:text-5xl font-bold font-headline">Get Involved</h1>
