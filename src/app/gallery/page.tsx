@@ -5,23 +5,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const graduatesImages = [
-    { src: "/OurGraduates/IMG_4526.jpeg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
-    { src: "/OurGraduates/IMG_4532.jpeg", hint: "student receiving award", alt: "A student receiving an award on stage" },
-    { src: "/OurGraduates/IMG_4541.jpeg", hint: "students performing on stage", alt: "Students performing during the graduation ceremony" },
-    { src: "/OurGraduates/IMG_4542.jpeg", hint: "graduates holding certificates", alt: "Graduates proudly holding their certificates" },
-    { src: "/OurGraduates/IMG_4549.jpeg", hint: "graduate giving speech", alt: "A graduate giving a speech at the podium" },
-    { src: "/OurGraduates/IMG_4550.jpeg", hint: "happy graduates", alt: "A group of happy graduates posing for a photo" },
+    { src: "/OurGraduates/IMG_4526.jpg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
+    { src: "/OurGraduates/IMG_4532.jpg", hint: "student receiving award", alt: "A student receiving an award on stage" },
+    { src: "/OurGraduates/IMG_4541.jpg", hint: "students performing on stage", alt: "Students performing during the graduation ceremony" },
+    { src: "/OurGraduates/IMG_4542.jpg", hint: "graduates holding certificates", alt: "Graduates proudly holding their certificates" },
+    { src: "/OurGraduates/IMG_4549.jpg", hint: "graduate giving speech", alt: "A graduate giving a speech at the podium" },
+    { src: "/OurGraduates/IMG_4550.jpg", hint: "happy graduates", alt: "A group of happy graduates posing for a photo" },
 ]
 
 const ceremonyImages = [
-    { src: "/Ceremony/IMG_4532.jpeg", hint: "award ceremony", alt: "Student receiving an award during the ceremony." },
-    { src: "/Ceremony/IMG_4535.jpeg", hint: "students on stage", alt: "Students gathered on stage for a photo." },
-    { src: "/Ceremony/IMG_4541.jpeg", hint: "students performance", alt: "A group of students performing a dance." },
-    { src: "/Ceremony/IMG_4542.jpeg", hint: "graduation photo", alt: "A graduate receiving their certificate." },
-    { src: "/Ceremony/IMG_4549.jpeg", hint: "guest speaker", alt: "A speaker addressing the audience at the ceremony." },
-    { src: "/Ceremony/IMG_4550.jpeg", hint: "students posing", alt: "A group of students smiling and posing." },
-    { src: "/Ceremony/IMG_4551.jpeg", hint: "audience photo", alt: "The audience watching the graduation ceremony." },
-    { src: "/Ceremony/IMG_4552.jpeg", hint: "graduation diplomas", alt: "A stack of graduation diplomas ready to be presented." },
+    { src: "/Ceremony/IMG_4532.jpg", hint: "award ceremony", alt: "Student receiving an award during the ceremony." },
+    { src: "/Ceremony/IMG_4535.jpg", hint: "students on stage", alt: "Students gathered on stage for a photo." },
+    { src: "/Ceremony/IMG_4541.jpg", hint: "students performance", alt: "A group of students performing a dance." },
+    { src: "/Ceremony/IMG_4542.jpg", hint: "graduation photo", alt: "A graduate receiving their certificate." },
+    { src: "/Ceremony/IMG_4549.jpg", hint: "guest speaker", alt: "A speaker addressing the audience at the ceremony." },
+    { src: "/Ceremony/IMG_4550.jpg", hint: "students posing", alt: "A group of students smiling and posing." },
+    { src: "/Ceremony/IMG_4551.jpg", hint: "audience photo", alt: "The audience watching the graduation ceremony." },
+    { src: "/Ceremony/IMG_4552.jpg", hint: "graduation diplomas", alt: "A stack of graduation diplomas ready to be presented." },
 ]
 
 function GalleryGrid({ images }: { images: { src: string; alt: string; hint: string; }[] }) {
