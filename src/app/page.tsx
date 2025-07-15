@@ -21,7 +21,7 @@ export default function Home() {
                 />
                 <div className="text-3xl md:text-4xl font-headline tracking-tight text-primary">
                     <p className="font-extrabold">RABBANIYAH EDUCARE</p>
-                    <p className="text-xl md:text-2xl mt-2">REFUGEE EDUCATION CENTER</p>
+                    <p className="text-xl md:text-2xl mt-2 font-body">REFUGEE EDUCATION CENTER</p>
                 </div>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
