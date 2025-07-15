@@ -5,8 +5,8 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Educare Reimagined',
-  description: 'A reimagined website for Rabbaniyah Educare, focusing on their mission to provide education for all.',
+  title: 'Rabbaniyah Educare',
+  description: 'A website for Rabbaniyah Educare, focusing on their mission to provide education for all.',
   keywords: ['education', 'charity', 'non-profit', 'community', 'Rabbaniyah Educare']
 };
 

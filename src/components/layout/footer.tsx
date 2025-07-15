@@ -9,7 +9,7 @@ export function Footer() {
           <div className="md:col-span-4">
             <Link href="/" className="flex items-center gap-2">
                 <HeartHandshake className="h-8 w-8 text-primary" />
-                <span className="font-bold font-headline text-xl">Educare Reimagined</span>
+                <span className="font-bold font-headline text-xl">Rabbaniyah Educare</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
               Empowering communities through accessible and quality education for all.
@@ -58,7 +58,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Educare Reimagined. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Rabbaniyah Educare. All rights reserved.</p>
         </div>
       </div>
     </footer>

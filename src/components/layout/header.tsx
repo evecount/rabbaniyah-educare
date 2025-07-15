@@ -52,7 +52,7 @@ export function Header() {
       <div className="container flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
           <HeartHandshake className="h-6 w-6 text-primary" />
-          <span className="font-bold font-headline text-lg">Educare Reimagined</span>
+          <span className="font-bold font-headline text-lg">Rabbaniyah Educare</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
@@ -74,7 +74,7 @@ export function Header() {
                 <div className="flex flex-col gap-6 p-6">
                     <Link href="/" className="flex items-center gap-2 mb-4" onClick={() => setMobileMenuOpen(false)}>
                         <HeartHandshake className="h-6 w-6 text-primary" />
-                        <span className="font-bold font-headline text-lg">Educare Reimagined</span>
+                        <span className="font-bold font-headline text-lg">Rabbaniyah Educare</span>
                     </Link>
                     <nav className="flex flex-col gap-4">
                       {navLinks.map((link) => (
