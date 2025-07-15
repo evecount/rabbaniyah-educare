@@ -1,0 +1,67 @@
+import { ContactForm } from "@/components/contact-form";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Mail, Phone, MapPin } from "lucide-react";
+
+export default function ContactPage() {
+  return (
+    <div className="bg-background">
+       <section className="relative py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto max-w-7xl px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold font-headline">Contact Us</h1>
+          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+            We'd love to hear from you. Whether you have a question, a suggestion, or want to partner with us, please reach out.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto max-w-7xl px-4">
+            <div className="grid md:grid-cols-10 gap-12">
+                <div className="md:col-span-6">
+                    <Card>
+                        <CardHeader>
+                            <CardTitle className="font-headline text-2xl">Send us a Message</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <ContactForm />
+                        </CardContent>
+                    </Card>
+                </div>
+                <div className="md:col-span-4">
+                    <h2 className="text-2xl font-bold font-headline mb-6">Our Information</h2>
+                    <div className="space-y-6">
+                        <div className="flex items-start gap-4">
+                           <div className="bg-primary/10 p-3 rounded-full">
+                             <MapPin className="h-6 w-6 text-primary" />
+                           </div>
+                            <div>
+                                <h3 className="font-semibold font-headline">Address</h3>
+                                <p className="text-muted-foreground">Lot 12421, Jalan Bunga Melati 15A,<br/>Taman Seraya, 56100 Ampang,<br/>Selangor Du, Malaysia</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-4">
+                             <div className="bg-primary/10 p-3 rounded-full">
+                                <Mail className="h-6 w-6 text-primary" />
+                            </div>
+                            <div>
+                                <h3 className="font-semibold font-headline">Email</h3>
+                                <a href="mailto:rabbaniyaheducare@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">rabbaniyaheducare@gmail.com</a>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-4">
+                            <div className="bg-primary/10 p-3 rounded-full">
+                                <Phone className="h-6 w-6 text-primary" />
+                            </div>
+                            <div>
+                                <h3 className="font-semibold font-headline">Phone</h3>
+                                <a href="tel:+601164099760" className="text-muted-foreground hover:text-primary transition-colors">+60 11-6409 9760</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    </div>
+  );
+}
