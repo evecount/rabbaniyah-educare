@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, BookOpen, Heart, Users } from "lucide-react";
@@ -51,7 +52,7 @@ export default function Home() {
                 </div>
                 <div className="text-3xl md:text-4xl font-headline tracking-tight text-foreground">
                     <p className="font-extrabold">RABBANIYAH EDUCARE</p>
-                    <p className="text-xl md:text-2xl mt-2 font-body">REFUGEE EDUCATION CENTER</p>
+                    <p className="text-xl md:text-2xl mt-2 font-body">REFUGE EDUCATION CENTER, MALAYSIA</p>
                 </div>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
