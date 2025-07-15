@@ -1,8 +1,11 @@
+
 "use client"
 import * as React from "react"
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { cn } from "@/lib/utils";
 
 const graduatesImages = [
     { src: "/graduates/491548966_989507160030145_8572996303758288139_n.jpg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
@@ -72,11 +75,21 @@ const ceremonyImages = [
     { src: "/ceremony/490715643_986319773682217_1565007057420124784_n.jpg", hint: "ceremony photo", alt: "Photo from the graduation ceremony." },
 ];
 
-function GalleryGrid({ images }: { images: { src: string; alt: string; hint: string; }[] }) {
+function GalleryGrid({ 
+    images,
+    onImageClick 
+}: { 
+    images: { src: string; alt: string; hint: string; }[];
+    onImageClick: (image: { src: string; alt: string; }) => void;
+}) {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {images.map((image, index) => (
-                <div key={index} className="relative aspect-square rounded-lg overflow-hidden group">
+                <div 
+                    key={index} 
+                    className="relative aspect-square rounded-lg overflow-hidden group cursor-pointer"
+                    onClick={() => onImageClick(image)}
+                >
                     <Image
                         src={image.src}
                         alt={image.alt}
@@ -85,9 +98,7 @@ function GalleryGrid({ images }: { images: { src: string; alt: string; hint: str
                         height={400}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-end p-4">
-                        <p className="text-white text-sm font-medium">{image.alt}</p>
-                    </div>
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
                 </div>
             ))}
         </div>
@@ -95,6 +106,8 @@ function GalleryGrid({ images }: { images: { src: string; alt: string; hint: str
 }
 
 export default function GraduatesPage() {
+  const [selectedImage, setSelectedImage] = React.useState<{src: string, alt: string} | null>(null);
+
   return (
     <div className="bg-background">
        <section className="relative py-20 md:py-32 bg-secondary">
@@ -119,7 +132,7 @@ export default function GraduatesPage() {
                         <CardTitle className="font-headline text-center">Celebrating Our Students</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <GalleryGrid images={graduatesImages} />
+                        <GalleryGrid images={graduatesImages} onImageClick={setSelectedImage} />
                     </CardContent>
                 </Card>
               </TabsContent>
@@ -129,13 +142,29 @@ export default function GraduatesPage() {
                         <CardTitle className="font-headline text-center">Graduation Day</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <GalleryGrid images={ceremonyImages} />
+                        <GalleryGrid images={ceremonyImages} onImageClick={setSelectedImage} />
                     </CardContent>
                 </Card>
               </TabsContent>
             </Tabs>
         </div>
       </section>
+
+      <Dialog open={!!selectedImage} onOpenChange={(isOpen) => !isOpen && setSelectedImage(null)}>
+        <DialogContent className="max-w-3xl p-0">
+            {selectedImage && (
+                <Image
+                    src={selectedImage.src}
+                    alt={selectedImage.alt}
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto object-contain rounded-lg"
+                />
+            )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
+
+    
