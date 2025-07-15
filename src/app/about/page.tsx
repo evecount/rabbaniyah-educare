@@ -1,3 +1,4 @@
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen, Target, Users } from "lucide-react";
@@ -35,7 +36,7 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-7xl px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold font-headline mb-4 text-primary flex items-center gap-3"><BookOpen className="w-8 h-8"/> Our Story</h2>
+              <h2 className="text-3xl font-bold font-headline mb-4 text-primary flex items-center gap-3"><BookOpen className="w-8 h-8"/> Our School</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   In 2008, our non-profit school was established with the help of Rohingya individuals and local Malaysian supporters, to serve the Rohingya refugee community residing in Kuala Lumpur.
