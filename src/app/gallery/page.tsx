@@ -5,13 +5,26 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const graduatesImages = [
-    { src: "/graduates/489828278_986320317015496_8687854344072611592_n.jpg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
-    { src: "/graduates/489878215_986321160348745_7760226463942364009_n.jpg", hint: "student receiving award", alt: "A student receiving an award on stage" },
-    { src: "/graduates/489927520_986320393682155_7547361732644265057_n.jpg", hint: "students performing on stage", alt: "Students performing during the graduation ceremony" },
-    { src: "/graduates/489928475_986321010348760_643690623694086886_n.jpg", hint: "graduates holding certificates", alt: "Graduates proudly holding their certificates" },
-    { src: "/graduates/490294143_986319327015595_1220846640072945418_n.jpg", hint: "graduate giving speech", alt: "A graduate giving a speech at the podium" },
-    { src: "/graduates/490294773_986320470348814_6449333909180769396_n.jpg", hint: "happy graduates", alt: "A group of happy graduates posing for a photo" },
-]
+    { src: "/graduates/491548966_989507160030145_8572996303758288139_n.jpg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
+    { src: "/graduates/491883381_989507426696785_3985075876813173429_n.jpg", hint: "student receiving award", alt: "A student receiving an award on stage" },
+    { src: "/graduates/491917541_989507546696773_672397877554336226_n.jpg", hint: "students performing on stage", alt: "Students performing during the graduation ceremony" },
+    { src: "/graduates/491919471_989507460030115_146997472358180735_n.jpg", hint: "graduates holding certificates", alt: "Graduates proudly holding their certificates" },
+    { src: "/graduates/491936879_989507390030122_2885219441418217231_n.jpg", hint: "graduate giving speech", alt: "A graduate giving a speech at the podium" },
+    { src: "/graduates/491979112_989507243363470_7331383508753631244_n.jpg", hint: "happy graduates", alt: "A group of happy graduates posing for a photo" },
+    { src: "/graduates/491997131_989507536696774_1924886347511733963_n.jpg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
+    { src: "/graduates/492004025_989507276696800_7050939593771973697_n.jpg", hint: "student receiving award", alt: "A student receiving an award on stage" },
+    { src: "/graduates/492189362_989507483363446_2035013827886497409_n.jpg", hint: "students performing on stage", alt: "Students performing during the graduation ceremony" },
+    { src: "/graduates/490298103_989507660030095_5276181332123475723_n.jpg", hint: "graduates holding certificates", alt: "Graduates proudly holding their certificates" },
+    { src: "/graduates/490363833_989507343363460_6500094328738724323_n.jpg", hint: "graduate giving speech", alt: "A graduate giving a speech at the podium" },
+    { src: "/graduates/490442754_989507436696784_3183949203183527555_n.jpg", hint: "happy graduates", alt: "A group of happy graduates posing for a photo" },
+    { src: "/graduates/490514138_989507293363465_8687828806908394336_n.jpg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
+    { src: "/graduates/490636032_986321207015407_3303602103866373578_n.jpg", hint: "student receiving award", alt: "A student receiving an award on stage" },
+    { src: "/graduates/490707927_986321343682060_5837460896327087679_n.jpg", hint: "students performing on stage", alt: "Students performing during the graduation ceremony" },
+    { src: "/graduates/490712079_989507380030123_3282182186785866711_n.jpg", hint: "graduates holding certificates", alt: "Graduates proudly holding their certificates" },
+    { src: "/graduates/490765391_986321270348734_3440983525635898951_n.jpg", hint: "graduate giving speech", alt: "A graduate giving a speech at the podium" },
+    { src: "/graduates/490774431_989507333363461_4009593706366031136_n.jpg", hint: "happy graduates", alt: "A group of happy graduates posing for a photo" },
+    { src: "/graduates/490914786_991263799854481_3413721374011061677_n.jpg", hint: "graduates group photo", alt: "A group photo of the Rabbaniyah Educare graduating class" },
+];
 
 const ceremonyImages = [
     { src: "/ceremony/490718403_986319863682208_3977818824518956521_n.jpg", hint: "ceremony photo", alt: "Photo from the graduation ceremony." },
