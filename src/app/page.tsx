@@ -52,7 +52,7 @@ export default function Home() {
                 </div>
                 <div className="text-3xl md:text-4xl font-headline tracking-tight text-foreground">
                     <p className="font-extrabold">RABBANIYAH EDUCARE</p>
-                    <p className="text-xl md:text-2xl mt-2 font-body">REFUGE EDUCATION CENTER, MALAYSIA</p>
+                    <p className="text-xl md:text-2xl mt-2 font-body">(REFUGEE EDUCATION CENTER, MALAYSIA)</p>
                 </div>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -79,7 +79,7 @@ export default function Home() {
         <section id="mission" className="py-16 md:py-24 bg-background">
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold font-headline">RABBANIYAH EDUCARE (REFUGE EDUCATION CENTER, MALAYSIA)</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">RABBANIYAH EDUCARE (REFUGEE EDUCATION CENTER, MALAYSIA)</h2>
               <div className="max-w-3xl mx-auto text-muted-foreground text-lg space-y-4">
                 <p>
                   Established in 2008, the Rabbaniyah Rohingya School for Refugees (Malaysia) wants to spread our message of hope and compassion. We focus on providing a future by giving children access to education.
