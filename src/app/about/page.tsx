@@ -50,7 +50,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg">
-                <Image src="https://placehold.co/600x400.png" alt="Placeholder image" layout="fill" objectFit="cover" data-ai-hint="classroom students" />
+                <Image src="/490022399_986321943682000_6575542716052706994_n.jpg" alt="Rabbaniyah Educare students in class" layout="fill" objectFit="cover" data-ai-hint="students learning" />
             </div>
           </div>
         </div>
