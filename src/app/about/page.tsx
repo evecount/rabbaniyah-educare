@@ -24,7 +24,10 @@ export default function AboutPage() {
             />
         </div>
         <div className="container mx-auto max-w-7xl px-4 text-center relative">
-            {/* This div is necessary to enforce the correct height based on padding */}
+            <h1 className="text-4xl md:text-5xl font-bold font-headline invisible">About Us</h1>
+            <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto invisible">
+                This text is hidden but preserves the layout.
+            </p>
         </div>
       </section>
 
