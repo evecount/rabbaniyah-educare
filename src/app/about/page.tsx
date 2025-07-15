@@ -49,7 +49,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg">
-                <Image src="https://placehold.co/600x400.png" data-ai-hint="refugee children school" alt="The first Rabbaniyah Educare center" layout="fill" objectFit="contain" />
+                <Image src="/482346712_962123602768501_369481951629583065_n.jpg" alt="Rabbaniyah Educare students in a classroom" layout="fill" objectFit="contain" />
             </div>
           </div>
         </div>
