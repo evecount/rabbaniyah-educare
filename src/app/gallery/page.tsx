@@ -115,8 +115,8 @@ export default function GraduatesPage() {
     <div className="bg-background">
       <section className="relative py-20 md:py-32 bg-primary/10">
         <div className="container mx-auto max-w-7xl px-4 text-center relative">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">Our Community</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-primary/80">
+          <h1 className="text-4xl md:text-5xl font-bold font-headline text-foreground">Our Community</h1>
+          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-foreground/80">
             Celebrating the achievements and bright futures of our students. See the faces of the next generation of leaders, thinkers, and innovators.
           </p>
         </div>
