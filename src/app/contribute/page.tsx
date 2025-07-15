@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { DollarSign, Gift, Heart, Users } from "lucide-react";
+import { DollarSign, Handshake, Shirt, Users } from "lucide-react";
 import Link from "next/link";
 
 const contributionOptions = [
@@ -9,7 +9,7 @@ const contributionOptions = [
         title: "Make a Donation",
         description: "Your financial support helps us fund our core programs, from school supplies to teacher salaries. Every contribution, big or small, makes a significant impact.",
         buttonText: "Donate Now",
-        href: "#"
+        href: "/contact"
     },
     {
         icon: Users,
@@ -19,15 +19,15 @@ const contributionOptions = [
         href: "/contact"
     },
     {
-        icon: Gift,
-        title: "Sponsor a Child",
-        description: "Change a child's life by sponsoring their education. Your sponsorship provides tuition, uniforms, books, and meals for a full academic year.",
-        buttonText: "Sponsor Today",
-        href: "#"
+        icon: Shirt,
+        title: "Donate School Uniforms",
+        description: "Have under-sized school uniforms that are used but not abused? We welcome in-kind donations to help our students look smart and feel confident.",
+        buttonText: "Learn More",
+        href: "/contact"
     },
     {
-        icon: Heart,
-        title: "Corporate Partnership",
+        icon: Handshake,
+        title: "Partner With Us",
         description: "Partner with us to create a lasting impact. We offer various corporate sponsorship opportunities that align with your company's social responsibility goals.",
         buttonText: "Partner With Us",
         href: "/contact"
