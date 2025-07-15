@@ -67,7 +67,7 @@ export default function ContactPage() {
                             </div>
                             <div>
                                 <h3 className="font-semibold font-headline">Join Our Community</h3>
-                                <a href="https://www.facebook.com/rabbaniyaheducare/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">Follow us on Facebook</a>
+                                <a href="https://www.facebook.com/rabbaniyaheducare/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors break-all">https://www.facebook.com/rabbaniyaheducare/</a>
                             </div>
                         </div>
                     </div>
