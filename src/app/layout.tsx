@@ -5,8 +5,7 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  // IMPORTANT: Update this with your actual production URL when ready
-  // metadataBase: new URL('https://www.rabbaniyah-educare.org'), 
+  metadataBase: new URL('http://rabbaniyaheducare.com/'),
   title: {
     default: 'Rabbaniyah Educare | Refugee Education Center, Malaysia',
     template: '%s | Rabbaniyah Educare',
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Rabbaniyah Educare | Refugee Education Center, Malaysia',
     description: 'A non-profit school providing education and support to Rohingya refugee children in Kuala Lumpur.',
-    url: 'https://www.rabbaniyah-educare.org',
+    url: 'http://rabbaniyaheducare.com/',
     siteName: 'Rabbaniyah Educare',
     images: [
       {
