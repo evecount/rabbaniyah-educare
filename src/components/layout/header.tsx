@@ -15,6 +15,7 @@ const navLinks = [
   { href: "/programs", label: "Programs" },
   { href: "/contribute", label: "Contribute" },
   { href: "/gallery", label: "Our Community" },
+  { href: "/donate", label: "Donate" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -62,7 +63,7 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-2">
             <Button asChild className="hidden md:flex">
-                <Link href="/contribute">Donate Now</Link>
+                <Link href="/donate">Donate Now</Link>
             </Button>
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
@@ -83,7 +84,7 @@ export function Header() {
                       ))}
                     </nav>
                     <Button asChild className="mt-4">
-                        <Link href="/contribute" onClick={() => setMobileMenuOpen(false)}>Donate Now</Link>
+                        <Link href="/donate" onClick={() => setMobileMenuOpen(false)}>Donate Now</Link>
                     </Button>
                 </div>
               </SheetContent>

@@ -95,6 +95,19 @@ export default function ContributePage() {
             </div>
         </div>
       </section>
+
+       <section className="bg-secondary py-16 md:py-24">
+        <div className="container mx-auto max-w-4xl px-4 text-center">
+            <h2 className="text-3xl font-bold font-headline text-primary mb-4">Make a Financial Contribution</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+              Your financial gift provides essential resources, supports our teachers, and helps us keep our doors open.
+            </p>
+            <Button size="lg" asChild>
+                <Link href="/donate">Donate Now</Link>
+            </Button>
+        </div>
+      </section>
+
     </div>
   );
 }

@@ -33,9 +33,10 @@ export function Footer() {
             <div>
               <h3 className="font-headline text-md font-semibold">Get Involved</h3>
               <ul className="mt-4 space-y-2">
+                <li><Link href="/donate" className="text-sm text-muted-foreground hover:text-primary">Donate</Link></li>
                 <li><Link href="/contribute" className="text-sm text-muted-foreground hover:text-primary">Contribute</Link></li>
-                <li><Link href="/contribute" className="text-sm text-muted-foreground hover:text-primary">Volunteer</Link></li>
-                <li><Link href="/contribute" className="text-sm text-muted-foreground hover:text-primary">Sponsor</Link></li>
+                <li><Link href="/contribute#volunteer" className="text-sm text-muted-foreground hover:text-primary">Volunteer</Link></li>
+                <li><Link href="/contact" className="text-sm text-muted-foreground hover:text-primary">Sponsor</Link></li>
               </ul>
             </div>
              <div>
