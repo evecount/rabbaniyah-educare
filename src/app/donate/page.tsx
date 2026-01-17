@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 };
 
 const bankDetails = {
-  bankName: "Maybank",
-  accountName: "Rabbaniyah Educare",
-  accountNumber: "5621 0663 8752",
-  swiftCode: "MBBEMYKL"
+  bankName: "Public Bank",
+  accountName: "RABBANIYAH EC LEGACY",
+  accountNumber: "3820849416",
+  swiftCode: "PBBEMYKL"
 }
 
 // A simple client component to handle the copy-to-clipboard functionality
